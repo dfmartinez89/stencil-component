@@ -16,10 +16,16 @@ export class CommentMovie {
 
   up() {
     this.score++;
+    if (this.score>5) {
+      this.reset();
+    }
   }
 
   down() {
     this.score--;
+    if (this.score<0) {
+      this.reset();
+    }
   }
 
   reset() {
