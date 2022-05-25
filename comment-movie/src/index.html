@@ -9,6 +9,9 @@
     <script nomodule src="/build/comment-movie.js"></script>
   </head>
   <body>
-    <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+    <!-- <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component> -->
+    <comment-movie btnup="Upvote" btndown="Downvote">
+      <div slot="title">Pledge your movie score at will, tomatoer</div>
+    </comment-movie>
   </body>
 </html>

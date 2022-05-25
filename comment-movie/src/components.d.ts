@@ -7,6 +7,9 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface CommentMovie {
+        "btndown": string;
+        "btnup": string;
+        "color": string;
     }
     interface MyComponent {
         /**
@@ -43,6 +46,9 @@ declare global {
 }
 declare namespace LocalJSX {
     interface CommentMovie {
+        "btndown"?: string;
+        "btnup"?: string;
+        "color"?: string;
     }
     interface MyComponent {
         /**
