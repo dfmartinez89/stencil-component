@@ -32,7 +32,7 @@ export class CommentMovie {
       <Host>
         <slot name="title"></slot>
         <button onClick={() => this.up()}>{this.btnup}</button>
-        <div>{this.score}</div>
+        <div class={`score ${this.color}`}>{this.score}</div>
         <button onClick={() => this.down()}>{this.btndown}</button>
       </Host>
     );

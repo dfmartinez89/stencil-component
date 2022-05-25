@@ -1,3 +1,34 @@
 :host {
   display: block;
 }
+
+button {
+  background: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  margin: 5px;
+  width: 55px;
+  height: 55px;
+  border: 1px;
+}
+
+.score {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.score.success {
+  background: green;
+}
+
+.score.loser {
+  background: red;
+}
