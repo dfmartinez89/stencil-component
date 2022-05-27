@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop, State, EventEmitter } from '@stencil/core';
+import { Component, Host, h, Prop, State } from '@stencil/core';
 
 @Component({
   tag: 'comment-movie',
@@ -12,7 +12,6 @@ export class CommentMovie {
 
   @State() score = 0;
 
-  // @Event() didReset: EventEmitter;
 
   up() {
     this.score++;
@@ -30,7 +29,6 @@ export class CommentMovie {
 
   reset() {
     this.score = 0;
-    // this.didReset.emit(true)
   }
 
   render() {
