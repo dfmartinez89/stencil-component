@@ -6,33 +6,11 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface CommentMovie {
-        "btndown": string;
-        "btnup": string;
-        "color": string;
-    }
     interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+        "rating": number;
     }
 }
 declare global {
-    interface HTMLCommentMovieElement extends Components.CommentMovie, HTMLStencilElement {
-    }
-    var HTMLCommentMovieElement: {
-        prototype: HTMLCommentMovieElement;
-        new (): HTMLCommentMovieElement;
-    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -40,32 +18,14 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
-        "comment-movie": HTMLCommentMovieElement;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
-    interface CommentMovie {
-        "btndown"?: string;
-        "btnup"?: string;
-        "color"?: string;
-    }
     interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+        "rating"?: number;
     }
     interface IntrinsicElements {
-        "comment-movie": CommentMovie;
         "my-component": MyComponent;
     }
 }
@@ -73,7 +33,6 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "comment-movie": LocalJSX.CommentMovie & JSXBase.HTMLAttributes<HTMLCommentMovieElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }

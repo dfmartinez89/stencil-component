@@ -8,15 +8,11 @@
 
   <script type="module" src="/build/comment-movie.esm.js"></script>
   <script nomodule src="/build/comment-movie.js"></script>
+  <script src='https://unpkg.com/@dev-engage/stencil-bootstrap@<current_version>/dist/stb.js'></script>
 </head>
 
 <body>
-  <!-- <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component> -->
-  <div id="container">
-    <comment-movie color="loser" btnup="Like" btndown="Dislike">
-      <h3 slot="title">Pledge your score at will</h3>
-    </comment-movie>
-  </div>
+  <my-component rating="5"></my-component>
 </body>
 
 </html>
